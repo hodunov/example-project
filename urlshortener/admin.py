@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from urlshortener.models import Shortener
+
+
+class ShortenerAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Shortener, ShortenerAdmin)
